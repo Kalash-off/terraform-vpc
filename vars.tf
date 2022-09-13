@@ -3,21 +3,20 @@ variable "AWS_REGION" {
 }
 
 variable "PRIVATE_KEY_PATH" {
-  default = "london-region-key-pair"
+  default = "london-region-key-pair1"
 }
 
 variable "PUBLIC_KEY_PATH" {
-  default = "london-region-key-pair.pub"
+  default = "london-region-key-pair1.pub"
 }
 
 variable "EC2_USER" {
   default = "ubuntu"
 }
 variable "AMI" {
-  type = "map"
 
-  default {
-    eu-west-2 = "ami-03dea29b0216a1e03"
-    us-east-1 = "ami-0c2a1acae6667e438"
+  default= {
+    eu-west-2 = "ami-0bd2099338bc55e6d"
+    us-east-1 = "ami-08d4ac5b634553e16"
   }
 }
